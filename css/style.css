@@ -987,7 +987,7 @@ body.lock {
 }
 
 .wooder-is__img::after {
-  content: url(/img/icons/play.png);
+  content: url(../img/icons/play.png);
   display: block;
   position: relative;
   margin-left: 112px;
