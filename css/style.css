@@ -980,7 +980,7 @@ body.lock {
   top: -252px;
 }
 
-#border {
+.border {
   display: block;
   position: relative;
   width: 272px;
