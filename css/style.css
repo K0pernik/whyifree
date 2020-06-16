@@ -254,8 +254,13 @@ body.lock {
   align-items: center;
 }
 
+.actions__info {
+  cursor: pointer;
+}
+
 .actions__lang {
   display: block;
+  cursor: pointer;
   opacity: 0.5;
   color: #ffffff;
   font-size: 15px;
@@ -620,13 +625,9 @@ body.lock {
   margin-left: 40px;
 }
 
-.elipse_1 {
-  width: 10px;
-  height: 10px;
-  display: block;
-  border-radius: 50%;
+.elipse:hover {
+  opacity: 1;
   border: 5px solid #bea67c;
-  margin-left: 60px;
 }
 
 .main-block__body {
@@ -777,7 +778,7 @@ body.lock {
   padding: 0 8px;
   margin-top: 10px;
   margin-right: 30px;
-  min-width: 300px;
+  max-width: 300px;
 }
 
 .textblock__title:before {
@@ -790,15 +791,25 @@ body.lock {
   border: 1px solid #000000;
 }
 
-.textblock__title_1 {
-  margin-right: 40px;
+.textblock__title_2 {
+  min-width: 300px;
 }
 
-.textblock__title_1:before {
+.textblock__title_1 {
+  padding-right: 18px;
+  text-align: right;
+}
+
+.textblock__title_1::before {
+  content: '';
+  display: none;
+}
+
+.textblock__title_1::after {
   content: "";
   display: block;
   position: relative;
-  top: 40px;
+  bottom: 40px;
   right: -200px;
   width: 151px;
   border: 1px solid #000000;
@@ -865,28 +876,14 @@ body.lock {
   margin-right: 190px;
 }
 
-.textblock__more:after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 3px;
-  height: 8px;
-  bottom: 43px;
-  left: 149px;
-  transform: rotate(-45deg);
-  border-right: 2px solid #bea67c;
-}
-
 .textblock__more:before {
-  content: "";
+  content: url(../img/icons/arrow.png);
   display: block;
   position: relative;
   width: 3px;
   height: 8px;
-  bottom: -41px;
-  left: 149px;
-  transform: rotate(45deg);
-  border-right: 2px solid #bea67c;
+  bottom: -40px;
+  left: 123px;
 }
 
 .textblock__more a {
@@ -896,17 +893,6 @@ body.lock {
   line-height: 70px;
   text-transform: uppercase;
   letter-spacing: 2.8px;
-}
-
-.textblock__more a:after {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 1px;
-  position: relative;
-  top: -36px;
-  left: 120px;
-  border: 1px solid #bea67c;
 }
 
 .textblock__more_1 {
@@ -1116,7 +1102,7 @@ body.lock {
 }
 
 .design__button a:after {
-  content: url(/img/icons/play-button.png);
+  content: url(../img/icons/play-button.png);
   position: relative;
   top: 8px;
   right: 160px;
@@ -1313,7 +1299,7 @@ body.lock {
     display: none;
   }
 
-  .textblock__title_1:before {
+  .textblock__title_1::after {
     display: none;
   }
 
