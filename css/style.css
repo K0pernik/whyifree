@@ -47,6 +47,9 @@ body {
 body {
   line-height: 1;
   font-family: "Proxima Nova";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input,
@@ -55,8 +58,17 @@ textarea {
   font-family: "Proxima Nova";
 }
 
+input::-ms-clear {
+  display: none;
+}
+
 button {
   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 a,
