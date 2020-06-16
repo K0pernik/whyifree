@@ -47,9 +47,6 @@ body {
 body {
   line-height: 1;
   font-family: "Proxima Nova";
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 input,
@@ -58,17 +55,8 @@ textarea {
   font-family: "Proxima Nova";
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 button {
   cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
 }
 
 a,
@@ -952,6 +940,16 @@ body.lock {
   flex-wrap: wrap;
 }
 
+.wooder-is__border {
+  display: block;
+  position: relative;
+  width: 272px;
+  height: 272px;
+  display: flex;
+  top: -83px;
+  right: 14px;
+}
+
 .wooder-is__img {
   width: 243px;
   height: 243px;
@@ -978,16 +976,6 @@ body.lock {
   position: relative;
   margin-left: 112px;
   top: -252px;
-}
-
-.border {
-  display: block;
-  position: relative;
-  width: 272px;
-  height: 272px;
-  display: flex;
-  top: -83px;
-  right: 14px;
 }
 
 .img__text {
